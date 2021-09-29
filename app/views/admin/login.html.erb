@@ -1,0 +1,20 @@
+
+<h2> Login </h2><br>
+
+
+<%= form_with do |form| %>
+
+  <div class="field">
+   <b> <%= form.label :name %></b>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+   <b> <%= form.label :password %></b> 
+    <%= form.password_field :password %>
+  </div>
+
+  <div class="actions"><br/>
+    <%= form.submit "Login",:class=>"btn btn-warning" %>
+  </div>
+<% end %>
