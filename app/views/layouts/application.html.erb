@@ -10,6 +10,7 @@
   </head>
 
   <body>
+
     <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -88,6 +89,7 @@
                     <li class="nav-item">
                   <a class="nav-link" 
                    <% if user_signed_in? %>
+                   <% $text=current_user.email %>
                     Logged in as <strong><%= current_user.email %></strong>
                     
                   <a class="nav-link" 
